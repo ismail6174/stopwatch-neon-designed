@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch UI</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./stopwatch.png" type="image/x-icon">
+</head>
+<body>
+    <h1 id="h1">You Can
+    Do It...!</h1>
+    <br>
+  <div id="stopwatch">
+    <h1 id="stoph1">STOPWATCH</h1>
+    <div class="time-display">
+      <h1 id="hour">00:</h1>
+      <h1 id="min">00:</h1>
+      <h1 id="sec">00:</h1>
+      <h1 id="msec">00</h1>
+    </div>
+    <div class="buttons">
+      <button id="btnstart" onclick="start()">Start</button>
+      <button id="btnstop" onclick="stop()">Pause</button>
+      <button id="btnreset" onclick="reset()">Reset</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  
+  
+</body>
+</html>

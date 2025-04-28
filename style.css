@@ -1,0 +1,77 @@
+/* 2-color palette: black & neon green */
+:root {
+    --primary: #0f0;         /* neon green */
+    --background: #000;      /* black */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100vh;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  #stopwatch {
+    text-align: center;
+    border: 2px solid var(--primary);
+    padding: 40px;
+    border-radius: 16px;
+    width: 350px;
+    margin-bottom: 10rem;
+  }
+  
+  #stopwatch h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  #stoph1{
+    margin-bottom: 16px;
+  }
+  
+  .time-display {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary);
+    padding: 12px ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    
+    gap: 1.2rem;
+    transition:0.8s ease;
+  }
+  #h1{
+      color : white;
+      margin-top:2rem;
+  }
+  .buttons button {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 10px 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  .buttons button:hover {
+    background-color: var(--primary);
+    color: var(--background);
+  }
+  
